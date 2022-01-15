@@ -1,0 +1,233 @@
+/* Poppins and Roboto Google Font IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    /* Colors */
+    --primary: #5375e2 !important;
+    --secondary: #f65868 !important;
+    --dark-grey: #5c616e !important;
+    --grey: #7791a1 !important;
+    --light-grey: #fefefe !important;
+    --white: #ffffff !important;
+    --black: #000000 !important;
+
+    /* Fonts */
+    --logo: "Poppins", sans-serif;
+    --text: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Hiding Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1% 2%;
+    opacity: 0;
+}
+
+/* Css to display the navbar on scroll */
+.bgcolor.scrolled {
+    background-color: var(--white);
+    box-shadow: 1px 1px 5px var(--black);
+    opacity: 1;
+}
+
+.navbar-brand {
+    font-family: var(--logo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.navbar-toggler {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    margin: 0 2rem;
+    font-family: var(--logo);
+    color: var(--primary);
+}
+
+.nav-link:hover {
+    color: var(--secondary);
+}
+
+.nav-item {
+    margin-left: auto;
+}
+
+.nav-link:hover .navbar:hover {
+    color: var(--secondary);
+}
+
+.hamburger-icon {
+    color: var(--primary);
+}
+
+.hamburger-icon:hover {
+    color: var(--dark-grey);
+    outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: end;
+}
+
+/* Home Section */
+#home {
+    background-image: url("../Images/home1.jpg");
+    height: 104.5vh;
+    background-size: cover;
+    margin-top: -58.59px;
+}
+
+/* Height for devices larger than 576px */
+/* @media (min-width: 992px) {
+    #home{
+        margin-top: -58.59px;
+    }
+} */
+
+.mask {
+    height: 104.5vh;
+    background-color: rgba(0, 13, 56, 0.8);
+}
+
+.text-container {
+    color: var(--white);
+    margin-top: 6rem;
+}
+
+.arrow-icon {
+    margin-top: 10rem;
+    color: var(--white);
+}
+
+.learn-more {
+    text-decoration: none !important;
+    color: var(--white);
+}
+
+.arrow-icon:hover {
+    color: var(--primary);
+    text-decoration: none !important;
+}
+
+.learn-more:hover {
+    color: var(--light-grey);
+    text-decoration: none;
+}
+
+/* About section */
+#about,
+#books {
+    margin-top: 50px;
+    padding-top: 5%;
+}
+
+.heading {
+    font-family: var(--logo);
+    font-weight: 600;
+    color: var(--primary);
+    padding: 2% 2% 0;
+    margin-bottom: 2rem;
+}
+
+.about-text {
+    font-family: var(--text);
+    color: var(--dark-grey);
+    font-size: 1.2rem;
+    padding: 1% 8%;
+    line-height: 38px;
+}
+
+/* Registration Form */
+#register {
+    background-color: var(--primary);
+    padding: 5% 0 5% 0;
+    margin-top: 180px;
+}
+
+.register-heading {
+    font-family: var(--logo);
+    font-weight: 600;
+    color: var(--white);
+    padding: 2% 2%;
+}
+
+.register-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 5%;
+}
+
+/* Popular Books */
+.card {
+    width: 20rem;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    padding: 3%;
+}
+
+.card-img-top {
+    padding: 10%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card:hover{
+        box-shadow: 1px 1px 5px 1px var(--primary);
+}
+
+/* Contact SEction */
+#contact {
+    background-color: var(--primary);
+    padding: 5% 0 5% 0;
+    margin-top: 80px;
+}
+
+.contact-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 5%;
+    margin: 0 6%;
+}
+
+/* Footer */
+.foot-icon li {
+    list-style: none;
+}
+
+.foot-icon i {
+    font-size: 25px;
+}
+
+.foot-icon i,
+.copyright {
+    color: var(--white);
+}
